@@ -1,6 +1,9 @@
 #############################
 ############Running in-line
 #############################
+#Set directory to alignment files
+cd /path/to/bam/
+
 refdir=/path/to/reference/directory/
 refas=/path/to/reference/fasta
 seqdict='Ref.dict'
@@ -8,11 +11,10 @@ seqdict='Ref.dict'
 #Create Ref.dict file
 java -jar $pic/picard.jar CreateSequenceDictionary R=$refas O=$seqdict
 #Adding STAR, GATK to PATH 
-export GATK_LOCAL_JAR=/usr/local/bin/gatk-4.1.9.0/gatk.jar
-export PATH=$PATH:/usr/local/bin/picard.jar
-export PATH=$PATH:/usr/local/bin/gatk-4.1.9.0
+export GATK_LOCAL_JAR=/path/to/gatk.jar
+export PATH=$PATH:/path/to/picard.jar
+export PATH=$PATH:/path/to/gatk-4.1.9.0
 
-cd $zz
 #INDEXING
 STAR --runMode genomeGenerate --genomeDir $ref --genomeFastaFiles $refas --genomeSAindexNbases 13 --runThreadN 20
 
