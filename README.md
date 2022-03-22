@@ -6,9 +6,9 @@ This is a pipeline for analyzing RNAseq data, via one liners, making use of pare
 It was developed to run on Ubuntu 18.04.6 LTS OS.  
 
 **Required:**
-Samtools
-STAR
-GATK
+Samtools,
+STAR,
+GATK,
 Picard Tools 
 
 **Optional:**
