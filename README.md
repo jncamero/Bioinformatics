@@ -15,7 +15,7 @@ Picard Tools
 bcftools
 
 
-# 1 RNAseq.sh
+# 1 Microhaplotyping
 Calling phased variants present in targetted sequencing reads
 
 **Required**
