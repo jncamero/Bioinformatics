@@ -15,7 +15,7 @@ Picard Tools
 bcftools
 
 
-# 2 Microhaplotyping
+# 2 Microhaplotyping.sh
 Calling phased variants present in targetted sequencing reads
 
 **Required**
@@ -40,4 +40,7 @@ Directions:
 3. set the "proc" variable to the number of files you want to process simultaneously
 (On a 12 core linux machine with 65 GB of RAM I find setting proc equal to 35-40 has good performance) 
 4. make file executable, and make sure you have read a write permissions to the directory
-sudo chmod +x MH.sh
+sudo chmod +x Microhaplotyping.sh
+5. Run
+
+nohup ./Microhaplotyping.sh &
